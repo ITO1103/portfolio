@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伊藤駿介のポートフォリオ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Hello world!</h1>
+        <p>これは伊藤駿介のポートフォリオサイトです。</p>
+
+        <section>
+            <h2>私について</h2>
+            <ul>
+                <li>情報セキュリティ大学院大学 (特待生II)</li>
+                <li>岡山理科大学 4年</li>
+                <li><a href="https://www.compsyslab.com/" target="_blank" rel="noopener noreferrer">計算機工学システム工学研究室</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>プロジェクト</h2>
+            <ul>
+                <li><a href="https://www.edp-ken.com/j1gp/">J-1 Grand Prix : Unity</a></li>
+                <li><a href="https://www.edp-ken.com/j1gpue/">J-1 Grand Prix : Unreal Engine 5</a></li>
+                <li>SecHack365 : Unreal Engine 5</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>スキル</h2>
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Unity</li>
+                <li>Unreal Engine</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>リンク</h2>
+            <ul>
+                <li><a href="https://x.com/Baby_On_Board02" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+                <li><a href="https://github.com/ITO1103" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>活動</h2>
+            <div class="activity-filters">
+                <button type="button" onclick="showYear('2022')">2022</button>
+                <button type="button" onclick="showYear('2023')">2023</button>
+                <button type="button" onclick="showYear('2024')">2024</button>
+                <button type="button" onclick="showYear('2025')">2025</button>
+                <button type="button" onclick="showYear('2026')">2026</button>
+                <button type="button" onclick="showAll()">All</button>
+            </div>
+            <div id="activity-list">
+                <div class="activity" data-year="2026">2025/3/8 : IPSJ 全国大会 6K-07</div>
+                <div class="activity" data-year="2025">2025/10/4 : 5th Okayama Revengers LT 登壇</div>
+                <div class="activity" data-year="2025">2025/9/4 : セキュリティ・キャンプミニ in 愛知 TA</div>
+                <div class="activity" data-year="2025">2025/9/4 : FIT 2025 B-021</div>
+                <div class="activity" data-year="2025">2025/5/11 : 4th Okayama Revengers LT 登壇</div>
+                <div class="activity" data-year="2024">2024/10/16 : 3rd Okayama Revengers LT 登壇</div>
+                <div class="activity" data-year="2024">2024/8/31 : <a href="https://issuehunt.jp/events/2024/summer/p3nfest" target="_blank" rel="noopener noreferrer">P3NFEST</a></div>
+                <div class="activity" data-year="2024">2024 : Flatt Security サマーインターン</div>
+                <div class="activity" data-year="2024">2024 : <a href="https://www.ipa.go.jp/jinzai/security-camp/2024/camp/index.html" target="_blank" rel="noopener noreferrer">セキュリティ・キャンプ全国大会2024 A【IoTセキュリティクラス】</a></div>
+                <div class="activity" data-year="2024">2024 : <a href="https://sechack365.nict.go.jp/" target="_blank" rel="noopener noreferrer">SecHack365 学習駆動コース コンテンツゼミ</a></div>
+                <div class="activity" data-year="2024">2024 : <a href="https://developers.gmo.jp/kitaq/devsecopsthon2024/" target="_blank" rel="noopener noreferrer">DevSecOpsThon GMO at kitaQ</a></div>
+                <div class="activity" data-year="2024">2024/3/23 : <a href="https://www.security-camp.or.jp/minicamp/hiroshima2023.html" target="_blank" rel="noopener noreferrer">セキュリティ・ミニキャンプ in 大阪 2024 専門講座</a></div>
+                <div class="activity" data-year="2024">2024 : Google init.g Alumni mentorship program</div>
+                <div class="activity" data-year="2024">2024/12/5 : 岡山理科大学 情報処理研究部 部長<a href="https://www.edp-ken.com/" target="_blank" rel="noopener noreferrer"></a> (2023-2024)</div>
+                <div class="activity" data-year="2023">2023/10/21 : 技育祭 2023 [秋]</div>
+                <div class="activity" data-year="2023">2023/10/15 : 1st Okayama Revengers LT 登壇</div>
+                <div class="activity" data-year="2023">2023 : <a href="https://www.edp-ken.com/post-15/" target="_blank" rel="noopener noreferrer">Google init.g 2023 Tokyo</a></div>
+                <div class="activity" data-year="2023">2023/9/30 : 3rd SECCONCON</div>
+                <div class="activity" data-year="2023">2023/9/6 : <a href="https://www.edp-ken.com/post-13/" target="_blank" rel="noopener noreferrer">浜松聖星高校にて動画講座</a></div>
+                <div class="activity" data-year="2023">2023 : SECCON Beginners CTF 2023</div>
+                <div class="activity" data-year="2023">2023/4/4 : <a href="https://www.edp-ken.com/j-1gp-1/" target="_blank" rel="noopener noreferrer">Unity版 J-1 Grand Prix α版リリース</a></div>
+                <div class="activity" data-year="2022">2022/12/20 : 岡山理科大学 情報処理研究部 部長<a href="https://www.edp-ken.com/" target="_blank" rel="noopener noreferrer"></a> (2022-2023)</div>
+                <div class="activity" data-year="2022">2022/11/19 : <a href="https://www.seccon.jp/2022/seccon_contest/secconcon.html" target="_blank" rel="noopener noreferrer">SECCONCON2022 [ロバストL1通信競技] 3位</a></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>連絡先</h2>
+            <ul>
+                <li>Mail: babyonboard1103[at]gmail.com</li>
+                <li><a href="https://x.com/Baby_On_Board02" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>このサイトについて</h2>
+            <ul>
+                <li>Source Han Code JP [<a href="https://github.com/adobe-fonts/source-han-code-jp" target="_blank" rel="noopener noreferrer">さらに詳しく</a>]</li>
+                <li>Cloudflare ZeroTrust Tunnel [<a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/" target="_blank" rel="noopener noreferrer">さらに詳しく</a>]</li>
+                <li>HTML, CSS, and JS</li>
+            </ul>
+            <p>[English version is <a href="index.html">here</a>]</p>
+        </section>
+
+        <hr>
+        <p>Copyright © 2026 Shunsuke Ito</p>
+    </main>
+
+    <script>
+        function formatActivities() {
+            var items = document.querySelectorAll('.activity');
+            items.forEach(function(item) {
+                if (item.querySelector('.activity-date')) {
+                    return;
+                }
+                var html = item.innerHTML;
+                var match = html.match(/^\s*([^:]+?)\s*:\s*([\s\S]*)$/);
+                if (!match) {
+                    return;
+                }
+
+                var date = match[1].trim();
+                var content = match[2].trim();
+                item.innerHTML =
+                    '<span class="activity-date">' + date + '</span>' +
+                    '<span class="activity-content">' + content + '</span>';
+            });
+        }
+
+        function showYear(year) {
+            var items = document.querySelectorAll('.activity');
+            items.forEach(function(item) {
+                var itemYear = item.getAttribute('data-year');
+                item.style.display = itemYear === year ? '' : 'none';
+            });
+        }
+
+        function showAll() {
+            var items = document.querySelectorAll('.activity');
+            items.forEach(function(item) {
+                item.style.display = '';
+            });
+        }
+
+        formatActivities();
+    </script>
+</body>
+</html>
